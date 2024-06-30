@@ -36,7 +36,7 @@ Ensure you have Node.js and npm installed on your machine.
    ```bash
    npm run build
  
-   This will generate the necessary files in the `dist` folder.
+This will generate the necessary files in the `dist` folder.
 
 ## Load the Extension in Chrome
 
