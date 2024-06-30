@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Fast-Apply",
+  "version": "1.0.0",
+  "background": {
+    "service_worker": "src/background.ts",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/content/script.tsx"]
+    }
+  ],
+  "permissions": ["debugger", "storage", "cookies"],
+  "web_accessible_resources": [
+    {
+      "resources": ["*.png", "*.svg", "*.gif", "*.woff", "*.tff", "*.ttf"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "icons": {
+    "16": "logo16.png",
+    "48": "logo48.png",
+    "128": "logo128.png"
+  }
+}
