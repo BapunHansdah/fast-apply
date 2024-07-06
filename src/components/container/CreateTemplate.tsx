@@ -58,6 +58,7 @@ export default function CreateTemplate({
       console.log(currentTemplate, "currentTemplate");
       setJobApplicationText(currentTemplate?.jobApplicationText || "");
       setResumeText(currentTemplate?.resumeText || "");
+      setName(currentTemplate?.name || "");
     });
   }
 
